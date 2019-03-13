@@ -1,0 +1,6 @@
+set.seed(123)
+mito<-1+rnorm(120)
+cyto<-1.5+rnorm(120)
+nuc<-0.1+rnorm(120)
+heart<-data.frame(mito,cyto,nuc)
+heart2<-subset(heart, nuc>0)
