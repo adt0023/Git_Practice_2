@@ -7,3 +7,5 @@ heart2<-subset(heart, nuc>0)
 library(ggplot2)
 g1<-ggplot(heart2,aes(x=mito))+geom_histogram()
 g2<-ggplot(subset(heart2, mito>2),aes(x=mito))+ geom_histogram()
+heart2$db<- rep(c("Yes","No"),3)
+
